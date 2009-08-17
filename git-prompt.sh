@@ -275,8 +275,8 @@ set_shell_label() {
         #then 
         host=${HOSTNAME}
         #host=`hostname --short`
-	host=${host#$default_host}
-	uphost=`echo ${host} | tr a-z A-Z`
+        host=${host#$default_host}
+        uphost=`echo ${host} | tr a-z A-Z`
         if [[ $upcase_hostname = "on" ]]; then 
                 host=${uphost}
         fi
